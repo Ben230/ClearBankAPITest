@@ -11,9 +11,11 @@ describe('CatAPI', function() {
     cy.get('#cat_button');
   });
 
-  it('produces a kitten', function() {
+  it('produces a kittens', function() {
     cy.get('#cat_button').click();
-    cy.wait(3000) // delay for the api call to finish - 3 seconds
-    cy.get('#cat_image').should('have.attr', 'src')
+    cy.get('#cat_button_clothes').click();
+    cy.wait(3000); // delay for the api call to finish - 3 seconds
+    cy.get('#cat_image').should('have.attr', 'src');
+    cy.get('#cat_image_clothes').should('have.attr', 'src');
   });
 });
