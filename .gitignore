@@ -1,4 +1,4 @@
 node_modules
 package-lock.json
-cypress/videos
-.env
+cypress/videos/*
+cypress/screenshots/*
