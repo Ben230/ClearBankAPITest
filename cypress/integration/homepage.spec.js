@@ -1,7 +1,13 @@
 describe('CatAPI', function() {
-  it('hello world test', function() {
+  it('contains The Cat Caller header', function() {
     cy.visit('localhost:3000');
 
-    cy.contains('Hello World!');
+    cy.contains('The Cat Caller');
+  });
+
+  it('contains a button', function() {
+    cy.visit('localhost:3000');
+
+    cy.get('#cat_button');
   });
 });
