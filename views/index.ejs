@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %>, click the button to make a call to a cat.</p>
-    <form action="/" method="post">
-      <button id="cat_button" type="submit">Click me</button>
-    </form>
+    <p>Welcome to <%= title %>, click the button for a random kitty!
+    <button id="cat_button">Click for cats</button>
+    <img id="cat_image"/>
+    <script src="javascripts/script.js"></script>
   </body>
 </html>
