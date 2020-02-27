@@ -1,8 +1,6 @@
 {
   "name": "ClearBankAPI",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "start": "node ./bin/www",
     "test": "start-server-and-test start http://localhost:3000 cypress",
@@ -24,7 +22,7 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
+    "ejs": "~2.6.1",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
